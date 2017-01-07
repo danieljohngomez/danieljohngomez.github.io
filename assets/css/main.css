@@ -714,7 +714,7 @@ header.nav.hide-menu {
  ----------------------------------- */
 
 #skill {
-    background: url('../../images/skills-bg.jpg') no-repeat scroll center center / cover;
+    /*background: url('../../images/skills-bg.jpg') no-repeat scroll center center / cover;*/
 }
 
 #skill .sec-overlay {

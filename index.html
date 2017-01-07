@@ -40,6 +40,7 @@
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
@@ -159,7 +160,7 @@
                         <div class="person-info">
                             <h3 class="about-subtitle">Personal Information</h3>
                             <h5><span>Name :</span> Daniel John Gomez</h5>
-                            <h5><span>Age :</span> 19</h5>
+                            <h5><span>Age :</span> <span id="age"></span></h5>
                             <h5><span>Phone :</span> +639153383586</h5>
                             <h5><span>Email :</span> gomezdq.bscs@auf.edu.ph</h5>
                             <h5><span>Address :</span> Pampanga, Philippines</h5>
@@ -275,7 +276,7 @@
                                                 <div class="singel-hr">
                                                     <div class="singel-hr-inner" data-height="60%">
                                                         <div class="skill-visiable">
-                                                            <span class="skill-title">NodeJS</span>
+                                                            <span class="skill-title">NativeScript</span>
 
                                                             <div class="hr-wrap">
                                                                 <div class="hrc"></div>
@@ -349,16 +350,16 @@
                                         <div class="single-skill">
                                             <div class="after-li">
                                                 <div class="singel-hr">
-                                                    <div class="singel-hr-inner" data-height="40%">
+                                                    <div class="singel-hr-inner" data-height="50%">
                                                         <div class="skill-visiable">
-                                                            <span class="skill-title">PHP</span>
+                                                            <span class="skill-title">Xamarin</span>
 
                                                             <div class="hr-wrap">
                                                                 <div class="hrc"></div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <span class="skill-count">40%</span>
+                                                    <span class="skill-count">50%</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -572,10 +573,10 @@
                 <div class="col-sm-12">
                     <div class="clearfix footer-inner">
                         <ul class="left social-icons">
-                            <li><a href="index.html#" class="tooltips tooltipped facebook" data-position="top"
+                            <li><a href="https://www.facebook.com/danieljohnqgomez" class="tooltips tooltipped facebook" data-position="top"
                                    data-delay="50" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="index.html#" class="tooltips tooltipped twitter" data-position="top"
+                            <li><a href="https://twitter.com/danieljohngomez" class="tooltips tooltipped twitter" data-position="top"
                                    data-delay="50" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
                             </li>
                         </ul>
@@ -606,6 +607,19 @@
 <script src="assets/libs/materialize/js/materialize.min.js"></script>
 <script src="assets/js/common.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    function getAge(dateString) {
+        var today = new Date();
+        var birthDate = new Date(dateString);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    }
+    document.getElementById("age").innerHTML = getAge("11-23-1996");
+</script>
 </body>
 
 </html>

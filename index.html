@@ -198,40 +198,12 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h2 class="title">Projects</h2>
-                            <!--<ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">-->
-                                <!--<li class="active"><a href="index.html#" data-target="*">All</a>-->
-                                <!--</li>-->
-                                <!--<li><a href="index.html#" data-target=".category-1">Art</a>-->
-                                <!--</li>-->
-                                <!--<li><a href="index.html#" data-target=".category-2">Accessories</a>-->
-                                <!--</li>-->
-                                <!--<li><a href="index.html#" data-target=".category-3">Design</a>-->
-                                <!--</li>-->
-                                <!--<li><a href="index.html#" data-target=".category-4">Fashion</a>-->
-                                <!--</li>-->
-                            <!--</ul>-->
                         </div>
                     </div>
                 </div>
             </div>
             <!-- .container end -->
         </div>
-        <!--<div id="portfolioModal" class="modal white">-->
-            <!--<div class="model-img"></div>-->
-            <!--<div class="modal-content">-->
-                <!--<h2 class="title">Lorem ipsum dolor sit fugit dolore.</h2>-->
-
-                <!--<p class="m-content">A portfolio is a collection of documents and writing that you assemble in order to-->
-                    <!--demonstrate that you have the appropriate prior.</p>-->
-            <!--</div>-->
-
-            <!--<div class="modal-footer">-->
-                <!--<a href="index.html#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Live-->
-                    <!--Demo</a>-->
-                <!--<a href="index.html#" class="waves-effect btn-flat brand-text modal-action modal-close">cancel</a>-->
-            <!--</div>-->
-        <!--</div>-->
-
         <div class="portfolio-bottom">
             <div class="container">
                 <div class="row">
@@ -257,12 +229,42 @@
                             </li>
                             <!--/ single portfolio -->
 
+                            <li class="single-port-item category-1 category-3">
+                                <a href="parkfriend" target="_blank"
+                                   class="waves-effect waves-block waves-light modal-trigger" data-toggle="modal"
+                                   data-target="#parkFriendModal">
+                                    <!-- Portfolio pop-up content-->
+                                    <div class="protfolio-image">
+                                        <img src="images/parkfriend.png" alt="portfolio">
+                                        <!-- portfolio thumbnail-->
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">ParkFriend<br/>Parking Information System</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
 
+                            <li class="single-port-item category-1 category-3">
+                                <a href="parkfriend" target="_blank"
+                                   class="waves-effect waves-block waves-light modal-trigger"  data-toggle="modal"
+                                   data-target="#speedsTaxModal">
+                                    <!-- Portfolio pop-up content-->
+                                    <div class="protfolio-image">
+                                        <img src="images/speedstax.png" alt="portfolio">
+                                        <!-- portfolio thumbnail-->
+                                        <div class="protfolio-content waves-effect waves-block waves-light">
+                                            <div class="protfolio-content__inner">
+                                                <h2 class="p-title">SpeedsTax<br/>Automatic Filing of Tax Applications</h2>
+                                            </div>
+                                        </div>
+                                        <div class="p-overlay"></div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
-                        <!--&lt;!&ndash; portfolio load more button&ndash;&gt;-->
-                        <!--<a id="portfolio-item-loader" href="index.html#"-->
-                           <!--class="btn-floating btn-large waves-effect waves-light brand-bg"><i-->
-                                <!--class="mdi-content-add"></i></a>-->
                     </div>
                 </div>
             </div>
@@ -405,7 +407,6 @@
 </main>
 <!-- Main Container end-->
 
-
 <!-- JavaScripts -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="assets/js/jquery.easing.1.3.js"></script>
@@ -417,6 +418,8 @@
 <script src="assets/libs/materialize/js/materialize.min.js"></script>
 <script src="assets/js/common.js"></script>
 <script src="assets/js/main.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
     function getAge(dateString) {
         var today = new Date();
@@ -431,5 +434,47 @@
     document.getElementById("age").innerHTML = getAge("11-23-1996");
 </script>
 </body>
+
+<div id="parkFriendModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/parkfriend-info.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="speedsTaxModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/speedsTax-info.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<!--<div class="modal fade" id="parkFriendModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+<!--    ParkFriend is a parking system that allows users to view the occupancy status of each parking lot via mobile-->
+<!--    application. The system includes a sensor installed on-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+<!--                <h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                ...-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 </html>

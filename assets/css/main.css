@@ -1116,10 +1116,13 @@ header.nav.hide-menu {
     margin-bottom: 15px;
 }
 .modal .modal-content {
-    padding: 0 20px 30px;
+    padding: 0px;
     border-bottom: 1px solid #eeeeee;
 
 
+}
+.modal-body {
+    padding: 0px;
 }
 .modal .modal-content p {
     color: #727272;
@@ -2064,3 +2067,5 @@ span.num {
 .menu-select [type="radio"]:not(:checked) + label:before {
     border-color: #999;
 }
+
+
